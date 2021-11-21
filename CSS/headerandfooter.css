@@ -1,0 +1,14 @@
+footer, header{
+  background-color: #FFFF00;
+  text-align: center;
+  padding: 20px;
+  text-align: center;}
+label{text-align:left;
+ display:inline-block;
+ width: 150px;}
+input {
+    text-align: center;
+}
+input:required {
+    background-color:tomato;
+}
