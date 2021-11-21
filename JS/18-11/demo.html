@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function getTime() {
+            var today = new Date();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var seconds = today.getSeconds();
+            document.write(hour + ":" + minute + ":" + second);
+            m = checkTime(m);
+            s = checkTime(s);
+            setInterval("getTime()", 1000);
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

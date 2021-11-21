@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>My First JavaScript Code!!</title>
+<script type="text/javascript">
+alert("Welcome!!!you are now learning javascript.");
+</script>
+</head>
+<body>
+</body>
+</html>

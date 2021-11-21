@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function testVariable() {
+            var strText = document.getElementById("textone").value;
+            var result = strText.toUpperCase();
+            document.getElementById('spanResult').textContent = result;
+
+        }
+    </script>
+</head>
+<body>
+    Enter name:
+    <input type="text" id="textone" />
+    <button onclick="testVariable()">submit</button><br />
+    <span id="spanResult"></span>
+</body>
+</html>

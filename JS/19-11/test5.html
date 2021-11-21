@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        /*function errorHandler() {
+            alert("an error has ocurred");
+        }*/
+        
+        function testVariable() {
+            try {
+                if (document.getElementById("textone").value == 1) {
+                    throw ("Error!! enter letter");
+                }
+                    else {
+                        var strText = document.getElementById("textone").value;
+                        var result = new Array("ECE", "CSE", "ME", "TCE");
+                        document.getElementById('spanResult').textContent = result;
+                    }
+
+               
+            } catch (e) { alert("Error: " + e); }
+
+            finally {
+                
+            }
+        }
+        
+    </script>
+</head>
+<body>
+
+    Enter name:
+    <input type="text" name="user" id="p1" size=30 maxlength=30 value="" required=""></br>
+    Enter empid:
+    <input type="text" name="user" id="p1" size=30 maxlength=30 value="" required=""></br>
+    Contact Number:
+    <input type="tel" name="tel" id="p3" pattern="[0-9]{5}-[0-9]{5}" size=11 maxlength=11 value="" required=""></br></br>
+    Email:
+    <input type="email" name="email" id="p4" size=35 maxlength=35 value="" required=""></br></br>
+    Address:
+    <input type="text" name="addr" size=35 id="p5" maxlength=35 value=""></br></br>
+    course:
+    <input type="text" id="textone" />
+    <button onclick="testVariable()">submit</button><br />
+    Stream:
+    <span id="spanResult"></span>
+    <script>
+        
+        </script>
+
+
+
+
+</body>
+</html>

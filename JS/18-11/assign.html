@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var n = prompt("name");
+        var i = prompt("id");
+        var d = prompt("dob");
+        var nu = prompt("no");
+        var a = prompt("addr");
+        var c = prompt("cour");
+        //var otheraddr = prompt("new address");
+        //var decision = prompt("do you want to change addr typr Y/N");
+        function details(name, id, dob, no, addr, cour) {
+            this.name = name;
+            this.id = id;
+            this.dob = dob
+            this.addr = addr;
+            this.no = no;
+            this.cour = cour;
+            this.changeaddr = changeaddr;
+            function changeaddr(otheraddr) {
+                this.addr = otheraddr
+            }
+
+        }
+        d=new details (n,i,d,nu,a,c)
+        document.write(d.name + " " + d.id + " " + d.dob + " " + d.no + " " + d.addr + " " + d.cour);
+        var newad = prompt("addr");
+        d.changeaddr(new);
+        document.write("<br>new address<br>"+d.name + " " + d.id + " " + d.dob + " " + d.no + " " + d.addr + " " + d.cour);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

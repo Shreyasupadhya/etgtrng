@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>click the button to make button element with text</p>
+    <button onclick="myfunction()">try it</button>
+    <script>
+        function myfunction() {
+            var btn = document.createElement("BUTTON");
+            var t = document.createTextNode("CLICK ME");
+            btn.appendChild(t);
+            document.body.appendChild(btn);
+        }
+    
+    </script>
+
+</body>
+</html>

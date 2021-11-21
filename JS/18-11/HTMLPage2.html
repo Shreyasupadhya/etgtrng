@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Function with arguements!!</title>
+    <script type="text/javascript">
+        var count = 0;
+        function countvowels(name) {
+            for ( var i=0; i<name.length; i++) {
+                if (name[i] == "a" || name[i] == "e" || name[i] == "i" || name[i] == "o" || name[i] == "u")
+                    count = count + 1;
+            }
+            document.write("hello" + name + "!your name has" + count + "vowels.");
+        }
+        var myname = prompt("name");
+        countvowels(myname);
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

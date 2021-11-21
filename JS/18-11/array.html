@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var cars = new Array("BMW", "Ferrari", "Tesla", "TATA");
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        }
+        var cars = new Array("BMW", "Ferrari", "Tesla", "TATA").reverse();
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        }
+        document.write(cars.length + "<br>")
+        document.write("<br><b>pop</B><br/>")
+        cars.pop();
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        } document.write("<br><b>push</B><br/>")
+        cars.push("Mercedes");
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        } document.write("<br><b>shift</B><br/>")
+        cars.shift();
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        } document.write("<br><b>unshift</B><br/>")
+        cars.unshift("Mclaren","Aston Martin");
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        }
+        document.write("<br><b>splice</B><br/>");
+        cars.splice(2,1,"Honda","Suzuki");
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        } document.write("<br><b>slice</B><br/>")
+        cars= cars.slice(2, 5);
+        for (var i = 0; i < cars.length; i++) {
+            document.write(cars[i] + "<br />");
+        }
+        cars.lastIndexOf("Honda")
+        document.write("<br><b>last index of</B><br/>" + cars.lastindexof("Honda"));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

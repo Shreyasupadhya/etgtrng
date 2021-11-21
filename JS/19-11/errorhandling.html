@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function myFunc() {
+            var a = parseInt(prompt("enter a:")); var b = parseInt(prompt("enter b:"));
+            try {
+                if (b == 0) {
+                    throw ("Divide by zero error.");
+                } else {
+                    var c = a / b;
+                    document.write("the result is :" + c);
+                }
+            } catch (e) { alert("Error: " + e); }
+        }
+        myFunc();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

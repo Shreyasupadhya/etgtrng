@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function validate() {
+            var patt = /\d[^A-z]/g;
+             
+            if (document.myForm.tele.value.match(patt)) {
+                alert("Enter valid number");
+                return true;
+            }
+            else {
+                ;
+                return false;
+            }
+            document.getElementById("demo").innerHTML = val;
+           // if (document.myForm.tele.value)
+            /*if (document.myForm.user.value == "") {
+                alert("Please provide your name!");
+                document.myForm.user.focus();
+            }
+            else if (st) {
+                alert("")
+            }*/
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="myForm" onsubmit="return (validate());">
+        Enter name:
+        <input type="text" name="user" id="p1" size=30 maxlength=30 value=""></br>
+        Enter empid:
+    <input type="text" name="user" id="p1" size=30 maxlength=30 value=""></br>
+    Contact Number:
+    <input type="text" name="tele" id="p3"  size=11 maxlength=11 value="" ></br></br>
+    Email:
+    <input type="email" name="email" id="p4" size=35 maxlength=35 value="" ></br></br>
+    Address:
+    <input type="text" name="addr" size=35 id="p5" maxlength=35 value=""></br></br>
+
+    
+        <input type="submit" name="submit">
+
+
+    </form>
+    <p id="demo"></p>
+    Course:
+    <button onclick="myfunction()">B.E</button>
+    <script>
+        function myfunction() {
+            var s1 = document.createElement("BUTTON");
+            var c1 = document.createTextNode("ECE");
+            s1.appendChild(c1);
+            document.body.appendChild(s1);
+
+            var s2 = document.createElement("BUTTON");
+            var c2 = document.createTextNode("CSE");
+            s2.appendChild(c2);
+            document.body.appendChild(s2);
+
+            var s3 = document.createElement("BUTTON");
+            var c3 = document.createTextNode("ME");
+            s3.appendChild(c3);
+            document.body.appendChild(s3);
+        }
+    </script>
+
+</body>
+</html>
